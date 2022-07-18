@@ -29,6 +29,16 @@ func (r *Run) Size(size int) *Run {
 	r.RunProperties.Size = &Size{
 		Val: size * 2,
 	}
+
+	return r
+}
+
+// Style set run style
+func (r *Run) Style(style string) *Run {
+	r.RunProperties.RunStyle = &RunStyle{
+		Val: style,
+	}
+
 	return r
 }
 

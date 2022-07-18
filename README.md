@@ -1,7 +1,7 @@
 # docx
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/gingfrederik/docx?sort=semver)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gingfrederik/docx)](https://goreportcard.com/report/github.com/gingfrederik/docx)
-[![GoDoc](https://pkg.go.dev/badge/github.com/gingfrederik/docx?status.svg)](https://pkg.go.dev/github.com/gingfrederik/docx?tab=doc)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/taofei-pro/docx?sort=semver)
+[![Go Report Card](https://goreportcard.com/badge/github.com/taofei-pro/docx)](https://goreportcard.com/report/github.com/taofei-pro/docx)
+[![GoDoc](https://pkg.go.dev/badge/github.com/taofei-pro/docx?status.svg)](https://pkg.go.dev/github.com/taofei-pro/docx?tab=doc)
 ## Introduction
 docx is a simple library to creating DOCX file in Go.
 
@@ -9,11 +9,11 @@ docx is a simple library to creating DOCX file in Go.
 ### Install
 Go modules supported
 ```sh
-go get github.com/gingfrederik/docx
+go get github.com/taofei-pro/docx
 ```
 Import:
 ```sh
-import "github.com/gingfrederik/docx"
+import "github.com/taofei-pro/docx"
 ```
 
 ### Usage
@@ -22,7 +22,7 @@ import "github.com/gingfrederik/docx"
 package main
 
 import (
-	"github.com/gingfrederik/docx"
+	"github.com/taofei-pro/docx"
 )
 
 func main() {
@@ -32,7 +32,9 @@ func main() {
 	// add text
 	para.AddText("test")
 
-	para.AddText("test font size").Size(22)
+	run := para.AddText("test font size")
+	run.Size(22)
+
 	para.AddText("test color").Color("808080")
 	para.AddText("test font size and color").Size(22).Color("121212")
 

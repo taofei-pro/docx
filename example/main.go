@@ -11,7 +11,9 @@ func main() {
 	// add text
 	para.AddText("test")
 
-	para.AddText("test font size").Size(22)
+	run := para.AddText("test font size")
+	run.Size(22)
+
 	para.AddText("test color").Color("808080")
 	para.AddText("test font size and color").Size(22).Color("121212")
 
