@@ -1,3 +1,3 @@
-module github.com/gingfrederik/docx
+module github.com/taofei-pro/docx
 
-go 1.13
+go 1.17

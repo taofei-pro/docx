@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gingfrederik/docx"
+	"github.com/taofei-pro/docx"
 )
 
 func main() {
